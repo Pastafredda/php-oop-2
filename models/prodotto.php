@@ -1,0 +1,36 @@
+<?php
+class prodotto{
+    private $name;
+    private $price;
+    private $description;
+
+    public function __construct($name, $price, $description){
+        $this -> setName($name);
+        $this -> setPrice($price);
+        $this -> setDescription($description);
+    }
+
+    public function getName(){
+        return $this -> name;
+    }
+
+    public function setName($name){
+        $this -> name = $name;
+    }
+
+    public function getPrice(){
+        return $this -> price;
+    }
+
+    public function setPrice($price){
+        $this -> price = $price;
+    }
+
+    public function getDescription(){
+        return $this-> description;
+    }
+
+    public function setDescription($description){
+        $this -> description = $description;
+    }
+}

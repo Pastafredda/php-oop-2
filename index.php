@@ -1,7 +1,24 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-require_once("./models/prodotto.php");
-$nameCat = new Category("Gatto");
-$nameDog = new Category("Cane");
-$prod1 = new Product("Guinzaglio", "14,99€", "Guinzaglio per cani di grossa taglia", $nameDog);
-var_dump($prod1);
+    <?php
+        require_once("./data/db.php");
+
+        var_dump($food1);
+
+    ?>
+</head>
+<body>
+    <h1>ciao</h1>
+    <div>
+        <h2>Questo è un bel prodotto</h2>
+        <ul>
+            
+        </ul>
+    </div>
+</body>
+</html>

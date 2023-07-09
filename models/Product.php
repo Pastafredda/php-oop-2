@@ -21,10 +21,14 @@ class Product{
     }
  
     public function getPrice(){
+       
         return $this -> price;
     }
  
     public function setPrice($price){
+        if($price < 0){
+            throw new Exception("Inserire un prezzo valido");
+        }
         $this -> price = $price;
     }
  
@@ -45,4 +49,7 @@ class Product{
     }
  
  }
+
+
+
 

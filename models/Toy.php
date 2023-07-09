@@ -1,13 +1,17 @@
 <?php
 class Toy extends Product{
+
+    use Edible;
+
     private $minAge;
     private $material;
 
-    public function __construct($name, $price, $description, $categories ,$minAge, $material){
+    public function __construct($name, $price, $description, $categories ,$minAge, $material, $edible){
         
         parent :: __construct($name, $price, $description, $categories);
         $this -> setMinAge($minAge);
         $this -> setMaterial($material);
+        $this -> setEdible($edible);
         
     }
 
